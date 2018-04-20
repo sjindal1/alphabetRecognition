@@ -1,0 +1,29 @@
+.container {
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+
+.col{
+    padding: .4em 1.3em;
+}
+
+.col-dark {
+    background: #2885C4;
+}
+
+.col-light {
+    background: #57B3F1;
+}
+
+input.txt {
+    border: 0;
+    padding: 1em;
+    width: 80%;
+    margin-bottom: 2em;
+}
+.life-container{
+    background: #3FA0E1;
+    padding: .5em;
+    font-weight: bold;
+    cursor: pointer;
+}
