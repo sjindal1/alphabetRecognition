@@ -1,0 +1,12 @@
+<div class="result-text">
+  <div *ngIf="clearText;then defaultContent else predictionContent"></div>
+  <ng-template #defaultContent>
+    <p>
+      {{defaultText}}
+    </p>
+  </ng-template>
+  <ng-template #predictionContent>
+    <p>I'm {{predictionPercentage}}% certain you wrote</p>
+    <span ng-if="prediction" class="predict-text">{{prediction}}</span>
+  </ng-template>
+</div>

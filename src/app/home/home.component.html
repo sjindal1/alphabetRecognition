@@ -1,4 +1,4 @@
-<div class="container col-dark">
+<!-- <div class="container col-dark">
   <div class="col">
     <p>Add bucket list item</p>
   </div>
@@ -20,12 +20,12 @@
       I want to climb a mountain...
     </p>
   </div>
-</div>
+</div> -->
 <div class="container col-dark">
     <div class="col">
-      <app-canvas></app-canvas>
+      <app-canvas (newPrediction)='setPredictions($event)' (clear)='clearPrevPredic($event)'></app-canvas>
     </div>
     <div class="col">
-     
+      <app-results [predictions]="predictions" [clearText]="clear"></app-results>
     </div>
-  </div>
+</div>

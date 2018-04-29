@@ -1,4 +1,6 @@
 <div>
-  <canvas width="500" height="300" id="canvas" #drawable data-drawing></canvas>
-  <input type="submit" class="btn" value="clear" (click) = 'clear()'>
+  <canvas drawable width="250" height="250" id="canvas" (newImage)='predict($event)' (clearImage)='clearText($event)'></canvas>
+  <div>
+    <input type="submit" class="btn btn-center" value="Clear" (click) = 'canvas.clear()'>
+  </div>
 </div>

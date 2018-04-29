@@ -8,13 +8,17 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { CanvasComponent } from './canvas/canvas.component';
 
+import { DrawableDirective } from './canvas/drawable.directive';
+import { ResultsComponent } from './results/results.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    CanvasComponent
+    CanvasComponent,
+    DrawableDirective,
+    ResultsComponent
   ],
   imports: [
     BrowserModule,

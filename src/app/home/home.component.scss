@@ -1,10 +1,14 @@
 .container {
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .col{
     padding: .4em 1.3em;
+    min-height: 200px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 .col-dark {
@@ -21,9 +25,16 @@ input.txt {
     width: 80%;
     margin-bottom: 2em;
 }
+
 .life-container{
     background: #3FA0E1;
     padding: .5em;
     font-weight: bold;
     cursor: pointer;
+}
+
+@media(max-width: 700px){
+    .container{
+        grid-template-columns: 1fr;
+    }
 }

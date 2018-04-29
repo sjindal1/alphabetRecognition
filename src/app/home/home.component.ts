@@ -12,4 +12,17 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  predictions:any;
+  clear:boolean;
+  
+
+  setPredictions(predictions:any){
+    this.predictions = predictions;
+  }
+
+  clearPrevPredic(clear){
+    console.log("inside home" + this.clear);
+    this.clear = clear;
+    this.predictions = null;
+  }
 }
